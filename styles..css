@@ -3,7 +3,7 @@ body{
 }
 .wrapper{
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 .logo, .menu{
   display: inline-block;
@@ -14,10 +14,11 @@ body{
   margin-bottom: 100px;
 }
 .logo{
+  margin-right: 0px;
   position: relative;
   padding: 40px 0;
-  padding-left: 44px;
-  font:bold 24px/32px pt_serifregular,arial,helvetica,sans-serif;
+  padding-left: 42px;
+  font: 700 24px/32px pt_serifregular,arial,helvetica,sans-serif;
 }
 .menu{
   display: flex;
@@ -25,14 +26,15 @@ body{
 }
 .menu__item{
   position: relative;
-  margin-right: 26px;
-  font: 500 18px/21px robotomedium,arial,helvetica,sans-serif;
+  margin-right: 25px;
+  margin-top: 5px;
+  font: 500 14px/16px robotomedium,arial,helvetica,sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
 }
 .menu__item:last-child{
-  margin-right: 0;
+  margin-right: 0px;
 }
 .logo__circle{
   width: 28px;
@@ -84,20 +86,28 @@ body{
   background: #0056EC;
 }
 .main{
-  padding: 0 55% 100px 0;
-  background: top right no-repeat url(img/image.svg);
+  padding: 0 40% 200px 0;
+}
+.main__image{
+  position: absolute;
+  top: 0px;
+  margin-top: 19%;
+  left: 46%;
+  width: 50%;
+  height: 100%;
+  background: top right no-repeat url('img/image1024.svg');
 }
 .main__title{
   margin: 0 0 40px 0;
   font: bold 50px/66px pt_serifbold,arial,helvetica,sans-serif;
 }
 .main__text{
-  margin: 0 0 41px 0;
+  margin: 0 200px 55px 0;
   font: 500 18px/21px robotomedium, arial, helvetica, sans-serif;
 }
 .main__button{
   font: 500 14px/16px robotomedium, arial, helvetica,sans-serif;
-  padding: 14px 16px;
+  padding: 14px 18px;
   color: #FFF;
   background: #0056EC;
   text-decoration: none;
@@ -120,11 +130,14 @@ body{
     display: none;
   }
   .header{
-    margin-bottom: 38px;
+    margin: 0 10px 38px 0;
+  }
+  .logo{
+    margin-left: 5px;
   }
   .main{
     text-align: center;
-    padding: 74% 0 0 0;
+    padding: 67% 0 0 0;
     background-size:74%;
     background-position: top center;
   }
@@ -133,11 +146,20 @@ body{
     font: bold 30px/40px pt_serifbold,arial,helvetica,sans-serif;
   }
   .main__text{
-    margin-bottom: 25px;
+    margin: 0 40px 42px 40px;
     font: 500 16px/19px robotomedium,arial,helvetica,sans-serif;
   }
   .main__button{
     font: 500 14px/16px robotomedium,arial,helvetica,sans-serif;
+  }
+  .main__image{
+    position: absolute;
+    top: 0px;
+    margin-top: 24%;
+    left: 12%;
+    width: 75%;
+    height: 100%;
+    background: top center no-repeat url('img/imageMobile.svg');
   }
   .logo__text{
     display: none;
@@ -219,4 +241,68 @@ body{
     visibility: visible;
     left: 50%;
   }
+  }
+  @media (min-width: 1366px) and (max-width: 1900px) {
+   .logo{
+     margin-left: 150px;
+     font: 700 24px/32px pt_serifregular,arial,helvetica,sans-serif;
+   }
+   .menu{
+    margin-right: 160px;
+    }
+    .main{
+      margin: 0 150px;
+    }
+    .main__text{
+      margin: 0 85px 55px 0;
+    }
+    .main__button{
+      padding: 14px 16px;
+    }
+    .main__image{
+      position: absolute;
+      top: 0px;
+      margin-top: 14%;
+      left: 46%;
+      width: 38%;
+      height: 100%;
+      background: top right no-repeat url('img/image1366.svg');
+    }
+    }
+  @media (min-width: 1901px){
+    .header{
+      margin-bottom: 200px;
+    }
+    .logo{
+      margin-left: 100px;
+    }
+    .menu{
+      margin-right: 110px
+    }
+    .menu__item{
+      font: 500 18px/21px robotomedium,arial,helvetica,sans-serif;
+    }
+    .main{
+      margin: 0 200px 0 100px;
+    }
+    .main__title{
+      font: bold 66px/87px pt_serifbold,arial,helvetica,sans-serif;
+    }
+    .main__text{
+      margin-right: 300px;
+      margin-bottom: 60px;
+      font: 500 22px/26px robotomedium, arial, helvetica, sans-serif;
+    }
+    .main__button{
+      font: 500 18px/21px robotomedium, arial, helvetica,sans-serif;
+      padding: 19px 28px;
+  }
+  .main__image{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-top: 13%;
+    width: 40%;
+    height: 100%;
+    background: top right no-repeat url('img/image1920.svg');
   }
