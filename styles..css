@@ -21,7 +21,7 @@ body{
   font: bold 24px/32px pt_serifregular,arial,helvetica,sans-serif;
 }
 .logo__text{
-  font-size: 24px/32px;
+  font: 24px/32px;
   transition: font-size 1s linear;
 }
 .menu{
@@ -208,7 +208,6 @@ body{
     width: 25px;
     height: 3px;
     cursor: pointer;
-    z-index: 1;
   }
   .menu__button > span,
   .menu__button > span::before,
@@ -242,6 +241,7 @@ body{
     list-style: none;
     text-align: center;
     background: #FFF;
+    z-index: 2;
   }
   .menu__item_box{
     display: block;
@@ -250,8 +250,9 @@ body{
     font: 500 20px 'robotomedium',arial,helvetica, sans-serif;
     text-decoration: none;
   }
-  .menu__item_box:hover{
-    background: #C8DBFB;
+  .menu__item_box_ref{
+    color: #000;
+    text-decoration: none;
   }
   #menu__toggle:checked ~ .menu__button > span{
     transform: rotate(45deg);
@@ -334,3 +335,4 @@ body{
     height: 100%;
     background: top right no-repeat url('img/image1920.svg');
   }
+}
