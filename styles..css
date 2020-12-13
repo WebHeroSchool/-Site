@@ -18,7 +18,7 @@ body{
   margin-right: 0%;
   padding: 4% 0;
   padding-left: 4%;
-  font: bold 24px/32px pt_serifregular,arial,helvetica,sans-serif;
+  font: 24px/32px pt_serifbold,arial,helvetica,sans-serif;
 }
 .logo__text{
   font: 24px/32px;
@@ -31,7 +31,7 @@ body{
 .menu__item{
   position: relative;
   margin: 9px 25px 0 0;
-  font: 500 14px/16px robotomedium,arial,helvetica,sans-serif;
+  font: 14px/16px robotomedium,arial,helvetica,sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -124,14 +124,14 @@ body{
 }
 .main__title{
   margin: 0 0 8% 0;
-  font: bold 50px/66px pt_serifbold,arial,helvetica,sans-serif;
+  font: 50px/66px pt_serifbold,arial,helvetica,sans-serif;
 }
 .main__text{
   margin: 0 19% 12% 0;
-  font: 500 18px/21px robotomedium, arial, helvetica, sans-serif;
+  font: 18px/21px robotomedium, arial, helvetica, sans-serif;
 }
 .main__button{
-  font: 500 14px/16px robotomedium, arial, helvetica,sans-serif;
+  font: 14px/16px robotomedium, arial, helvetica,sans-serif;
   padding: 14px 18px;
   color: #FFF;
   background: #0056EC;
@@ -184,10 +184,10 @@ body{
   }
   .main__text{
     margin: 0% 10% 12% 11%;
-    font: 500 16px/19px robotomedium,arial,helvetica,sans-serif;
+    font: 16px/19px robotomedium,arial,helvetica,sans-serif;
   }
   .main__button{
-    font: 500 14px/16px robotomedium,arial,helvetica,sans-serif;
+    font: 14px/16px robotomedium,arial,helvetica,sans-serif;
   }
   .logo__text{
     display: none;
@@ -248,7 +248,7 @@ body{
     display: block;
     padding: 12px 24px;
     color: #000;
-    font: 500 20px 'robotomedium',arial,helvetica, sans-serif;
+    font: 20px 'robotomedium',arial,helvetica, sans-serif;
     text-decoration: none;
   }
   .menu__item_box_ref{
@@ -275,7 +275,7 @@ body{
 @media (min-width: 1366px) and (max-width: 1900px) {
   .logo{
     margin: -1% 0 0 12.5%;
-    font: 700 24px/32px pt_serifregular,arial,helvetica,sans-serif;
+    font: 24px/32px pt_serifbold,arial,helvetica,sans-serif;
   }
    .logo__text{
     margin: 3% 0 0 -4%;
@@ -315,7 +315,7 @@ body{
     margin-right: 110px;
   }
   .menu__item{
-    font: 500 18px/21px robotomedium,arial,helvetica,sans-serif;
+    font: 18px/21px robotomedium,arial,helvetica,sans-serif;
   }
   .main{
     display: flex;
@@ -330,15 +330,15 @@ body{
   }
   .main__title{
     margin-bottom: 5%;
-    font: bold 66px/87px pt_serifbold,arial,helvetica,sans-serif;
+    font: 66px/87px pt_serifbold,arial,helvetica,sans-serif;
   }
   .main__text{
     margin: 0 37% 7% 0;
-    font: 500 22px/26px robotomedium, arial, helvetica, sans-serif;
+    font: 22px/26px robotomedium, arial, helvetica, sans-serif;
   }
   .main__button{
     padding: 19px 28px;
-    font: 500 18px/21px robotomedium, arial, helvetica,sans-serif;
+    font: 18px/21px robotomedium, arial, helvetica,sans-serif;
   }
 }
 @media (min-width: 540px) and (max-width: 768px) {
@@ -346,8 +346,14 @@ body{
     padding-top: 43%;
     margin-top: -4%;
     background: top center no-repeat url('img/image1024.svg');
+    background-size: 70%;
   }
   .menu__hamburger{
     margin-top: -22px;
+  }
+}
+@media (min-width: 769px) and (max-width: 960px){
+  .main{
+    background-size: 50%;
   }
 }
